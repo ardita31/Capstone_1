@@ -29,3 +29,5 @@ Using SQL, I will answer business questions related to an assigned sales territo
 ## Author
 
 Ardita Mrapshtija
+## Video Link
+- https://drive.google.com/file/d/1Wm6SgyOyBp6RCOh6bmtisrlQNVfnIlaM/view?usp=drive_link
