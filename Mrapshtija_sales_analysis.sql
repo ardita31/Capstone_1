@@ -11,7 +11,7 @@ WHERE State LIKE '%New Jersey%';
 -- The manager assigned to New Jersey is Miami Vue (Region:Northeast)
 
 -- 1. What is the total revenue overall for sales in the assigned territoy, plus the start date and the end date that tell you 
--- what period the data covers. 
+-- what period the data covers? 
 
 SELECT sl.State,
 	SUM(ss.Sale_Amount) AS Total_Revenue,
@@ -109,3 +109,20 @@ ORDER BY Store_Rank;
 -- Results are ordered by Store_Rank to display top performing stores first.
 
 -- 6. What is your recommendation for where to focus sales attention in the next quarter? 
+/*
+1)Based on the results of my queries we can see that Newark ($623k) and Trenton($598k) earn about twice what the next stores do, 
+and they account for roughly 24% of total revenue ($5.18M). Our focus should be on protecting these stores, ensuring that they have
+full inventory, enough staff, and strong promos. 
+2)The other stores that have growth potential are Hoboken, Atlantic City, New Brunswik, Morristown, and Vineland. Their revenue varies between 
+$306k and $317k. Average transactions almost identical, $137 to $141, so the reason behind the revenue difference is the number of visitors.
+We can tackle that by implementing strategies to raise foor traffic: local promotions, events or loyalty based offers. 
+Another startegy would also be add-on bundles at checkout, with the intention of rasing the basket size. 
+3)Investigate Paterson before investing in it.It earned only $67K from 427 transactions, 
+while others have around 2,200, though its average ticket ($157) is the highest. 
+Find out whether it opened late, closed for a period, or has missing data. Then decide whether to fix it, support it, or leave it out of comparisons.
+4)Keep technology strong and reduce reliance on it.
+Technology & Accessories (70%) and Textbooks (18%) make up 88% of revenue. Prioritize stock and promotions for both. 
+Use the small categories (apparel, art supplies, general books, stationery) as add-ons to bigger purchases, and track whether their share rises.
+5) Learn from 2025’s jump and October spike.Revenue rose 29% from December 2024 to January 2025, and October 2025 reached $251K, about 60% above its neighbors. 
+Find the cause of each, such as a promotion, a new product line, a large order, or a data error. If it’s repeatable, plan to repeat it.
+*/
